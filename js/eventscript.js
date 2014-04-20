@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-//functions for top div
+//events for top div
 	$( ".welcome" ).click(function(event) {
 		alert("Thanks for visiting this page!");
 	});
@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$(".box5").mouseover(function(event){
 		$(".box5").parents().css("background-color", "#0E0597")
 	});
-//functions for middle div; trying form validation
+//events for middle div; trying form validation
 	$("form").submit(function(event) {
   		if ($("input:first" ).val() === "jquery") {
     $(".feedback").text("Validated!").show();
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
 
-//functions for third div
+//events for third div
 
 	$(".mouse").mouseup(function(event) {
     $(this).append( "<span style='color:black;'>Mouse up.</span>");
@@ -51,6 +51,22 @@ $(document).ready(function() {
   	$(".reset").click(function(event){
   		$("span").empty();
   	});
+
+//events for 4th div
+$( "article" ).click(function(event) {
+  $( ".eventsD" ).html( " YOU CLICKED ON THE " + event.target.nodeName + " HTML element." );
+});
+
+//events for 5th div
+function handler(event) {
+  var target = $(event.target);
+  if (target.is("li")) {
+    target.children().toggle();
+}
+}
+$("ul").click(handler).find("ul").hide();
+
+
 
   		
 

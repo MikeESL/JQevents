@@ -58,7 +58,7 @@ input{
 
 
 }
-.eventsD{
+article{
 	background-color: #83FF53;
 	width: 100%;
 	min-height: 300px;
@@ -68,10 +68,42 @@ input{
 
 
 }
+section{
+	background-color: #4CBEFF;
+	width: 85%;
+	min-height: 250px;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 8px;
+
+}
+.see{
+	background-color: #D9D0C4;
+	width: 90%;
+	min-height: 200px;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 8px;
+
+}
+.clicky{
+	border: 1px dashed black;
+	width: 70%;
+	background-color: #B9BAC5;
+}
 
 .mouse{
 	min-width:auto;
 	min-height: auto;
+}
+.eventsE{
+	background-color: #FF806A;
+	width: 100%;
+	min-height: 300px;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 15px;
+
 }
 
 
